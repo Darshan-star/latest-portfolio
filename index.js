@@ -23,7 +23,7 @@ icons.forEach((icon) => {
         icon.innerHTML = '<i class="bx bx-sun"></i>';
         icon.style.color = "white";
       } else {
-        icon.innerHTML = '<i class="bx bx-moon"></i>';
+        icon.innerHTML = '<i class="bx bx-moon"></i>'; 
         icon.style.color = "#121713";
       }
     });
@@ -31,7 +31,7 @@ icons.forEach((icon) => {
 });
  
 // Colors
-const widget = document.querySelector(".widget");
+const widget = document.querySelector(".widget"); 
 const control = document.querySelector(".control");
 
 widget.addEventListener("click", () => {
@@ -43,7 +43,7 @@ document.querySelector(":root").style.setProperty("--customColor", "#42caff");
  
 colors.forEach((color) => {
   color.addEventListener("click", () => {
-    const currentColor = color.dataset.id;
+    const currentColor = color.dataset.id; 
     document
       .querySelector(":root")
       .style.setProperty("--customColor", currentColor);
