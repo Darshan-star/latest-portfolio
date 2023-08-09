@@ -13,7 +13,7 @@ close.addEventListener("click", () => {
 
 // theme
 const icons = [...document.querySelectorAll(".theme-icon")];
-
+ 
 icons.forEach((icon) => {
   if (icon) {
     icon.addEventListener("click", () => {
@@ -29,7 +29,7 @@ icons.forEach((icon) => {
     });
   }
 });
-
+ 
 // Colors
 const widget = document.querySelector(".widget");
 const control = document.querySelector(".control");
@@ -40,7 +40,7 @@ widget.addEventListener("click", () => {
 
 const colors = [...document.querySelectorAll(".colors span")];
 document.querySelector(":root").style.setProperty("--customColor", "#42caff");
-
+ 
 colors.forEach((color) => {
   color.addEventListener("click", () => {
     const currentColor = color.dataset.id;
@@ -60,7 +60,7 @@ new TypeIt("#type1", {
   loop: true,
   waitUntilVisible: true,
 })
-  .type("CSE Student at CU", { delay: 400 })
+  .type("COMPUTER ENGINEER", { delay: 400 })
   .pause(500)
   .delete(17)
   .go();
